@@ -1,10 +1,11 @@
 # loadingjs
 
 
-$('body').loading(); to show loading
-$('body').loading('stop'); to hide loading
-configuraciones
+`$('body').loading(); ` to show loading
 
+`$('body').loading('stop'); ` to hide loading
+configuraciones
+````
 $('body').loading({
             message:"Loading", //message in center loading
             background:"rgba(255,255,255,0.75)", //color of overlay
