@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/loading.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/loading.js"></script>
+</head>
+<body>
+
+<div id="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam architecto assumenda, aut eius eos repellendus.
+    Animi atque aut debitis iure placeat quod, vitae? Explicabo, laborum libero nihil sint ut voluptatem?
+Consequuntur, doloremque ex ipsa placeat provident suscipit ullam? A consectetur, consequuntur culpa cumque, ex
+    fuga in labore maiores molestias officia pariatur quibusdam quos recusandae, repudiandae sed sequi similique sint
+    voluptates.
+A amet at atque beatae blanditiis commodi corporis dignissimos ducimus eaque earum eius eligendi eveniet excepturi
+    fuga id impedit in modi molestias nihil nobis qui quod rerum, sed soluta totam.
+Accusamus accusantium amet dolore, doloremque dolorum eaque enim et excepturi, fugiat impedit itaque iure
+    laudantium, molestias repellendus ut vel velit voluptatum. Assumenda beatae cumque esse facere labore molestiae
+    nesciunt, quo.
+Commodi dignissimos ex incidunt quidem repellendus. Consequuntur cum deleniti deserunt est minima nam possimus quia
+    ratione similique temporibus! Consequuntur doloribus in nulla officia omnis quo quod similique voluptas! Eum, ipsa.
+Ab adipisci asperiores autem blanditiis culpa cum cumque cupiditate debitis dolores facere harum, hic impedit
+    magnam maxime pariatur quam quibusdam quis quo quos, sapiente, sequi soluta tempore totam ullam velit.
+Aperiam consequatur itaque maiores non odit sunt! Asperiores assumenda blanditiis doloremque eius eum
+    exercitationem, facere iste magni nemo nisi officiis provident quidem quis sint tempora voluptatem voluptates?
+    Accusamus, amet, non!
+Accusantium, adipisci cum eligendi esse ipsum non quaerat quasi recusandae. Ipsa nesciunt recusandae repellat? A
+    architecto autem cum eveniet facere labore laboriosam quaerat, recusandae repudiandae soluta tempora unde. Debitis,
+    quos!
+Dicta dolores eaque illo libero obcaecati quibusdam voluptates. Consectetur corporis hic numquam odio perspiciatis
+    rem sapiente tenetur ut? Atque debitis enim fuga iure libero natus nisi perspiciatis sunt? Cum, est!
+Accusantium aliquam aperiam, at delectus, ducimus eaque expedita impedit laboriosam mollitia nemo sequi velit
+    veritatis vero. Accusamus consequuntur fugit, nobis nostrum quaerat quas quisquam recusandae sequi sit, tenetur
+    veritatis voluptas.
+</div>
+<div id="test" style="border: 1px solid #000; width: 50%;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto atque commodi debitis ea eligendi eum excepturi id, iure maxime modi natus odio perferendis perspiciatis quae, quisquam tempore ullam, vel?</div>
+<div id="test2" style="border: 1px solid #000; width: 50%;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto atque commodi debitis ea eligendi eum excepturi id, iure maxime modi natus odio perferendis perspiciatis quae, quisquam tempore ullam, vel?</div>
+<script>
+    $('#content').loading();
+    $('#test').loading({
+        configLoading:[],
+        custom:[
+        {
+            display: "block",
+            position: "absolute",
+            left: "50%",
+            top: "50%",
+            width: "50px",
+            height: "50px",
+            margin: "-25px 0 0 -25px",
+            "border-radius": "50%",
+            border: "3px solid transparent",
+            "border-top-color": "#3498db",
+            "z-index": "7500",
+            "-webkit-animation": "spin 2s linear infinite", /* Chrome, Opera 15+, Safari 5+ */
+            "animation": "spin 0.5s linear infinite"
+        },
+        {
+            display: "block",
+            position: "absolute",
+            left: "50%",
+            top: "50%",
+            width: "50px",
+            height: "50px",
+            margin: "-25px 0 0 -25px",
+            "border-radius": "50%",
+            border: "3px solid transparent",
+            "border-top-color": "red",
+            "z-index": "7500",
+            "-webkit-animation": "spin 2s linear infinite", /* Chrome, Opera 15+, Safari 5+ */
+            "animation": "spinR 0.5s linear infinite"
+        }
+    ]});
+    $('#test2').loading({
+        configLoading:[
+            {
+                width:50,
+                border:"3px",
+                color:"#3498db",
+                effect:"spin",
+                time:"1.5s"
+            },{
+                width:50,
+                border:"3px",
+                color:"#3498db",
+                effect:"spinR",
+                time:"1.2s"
+            },
+            {
+                width:40,
+                border:"3px",
+                color:"#3498db",
+                effect:"spin",
+                time:"1.3s"
+            },{
+                width:40,
+                border:"3px",
+                color:"#3498db",
+                effect:"spinR",
+                time:"1.5s"
+            },
+        ]
+    });
+</script>
+</body>
+</html>
